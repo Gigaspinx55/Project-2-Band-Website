@@ -167,77 +167,38 @@
     </style>
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
-        <div
-      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle"
-    >
-      <button
-        class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-        id="bd-theme"
-        type="button"
-        aria-expanded="false"
-        data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)"
-      >
-        <svg class="bi my-1 theme-icon-active" aria-hidden="true">
-          <use href="#circle-half"></use>
-        </svg>
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul
-        class="dropdown-menu dropdown-menu-end shadow"
-        aria-labelledby="bd-theme-text"
-      >
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="light"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#sun-fill"></use>
-            </svg>
-            Light
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center"
-            data-bs-theme-value="dark"
-            aria-pressed="false"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#moon-stars-fill"></use>
-            </svg>
-            Dark
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-        <li>
-          <button
-            type="button"
-            class="dropdown-item d-flex align-items-center active"
-            data-bs-theme-value="auto"
-            aria-pressed="true"
-          >
-            <svg class="bi me-2 opacity-50" aria-hidden="true">
-              <use href="#circle-half"></use>
-            </svg>
-            Auto
-            <svg class="bi ms-auto d-none" aria-hidden="true">
-              <use href="#check2"></use>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </div>
+  <!-- NAVBAR -->
+  <nav id="mainNav" class="navbar navbar-expand-md bg-body-tertiary fixed-top border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand brand" href="#top"><span class="dot"></span>CACTUS-IX</a>
 
+      <div class="d-flex align-items-center gap-2">
+        <!-- Theme select (desktop) -->
+        <label for="themeSelect" class="visually-hidden">Theme</label>
+        <select id="themeSelect" class="form-select form-select-sm w-auto d-none d-md-block" aria-label="Theme select">
+          <option value="bootstrap-light">Bootstrap Light</option>
+          <option value="bootstrap-dark">Bootstrap Dark</option>
+          <option value="cactus-light">Cactus Light</option>
+          <option value="cactus-dark">Cactus Dark</option>
+        </select>
+
+        <!-- Mobile toggler -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navContent"
+                aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div id="navContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1" aria-hidden="true"></i>Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-stars me-1" aria-hidden="true"></i>Information</a></li>
+          <li class="nav-item"><a class="nav-link" href="Music video.html"><i class="bi bi-patch-question me-1" aria-hidden="true"></i>Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="Discography.html"><i class="bi bi-grid-3x3-gap me-1" aria-hidden="true"></i>Discography</a></li>
+          <li class="nav-item"><a class="nav-link" href="Tours.html"><i class="bi bi-envelope-open me-1" aria-hidden="true"></i>Tours</a></li>
+        </ul>
+      </div>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
         <path
